@@ -1,0 +1,29 @@
+<h3><b>Exchange rate visualization using R packages</b><h3>
+This application demonstrates how to use different R libraries to visualize exchange rates, using <i>shiny</i> and <i>shinydashboard</i> packages for user interface. 
+Currency pairs, that are used for demonstration - USD/RUB, EUR/RUB, GBP/RUB (RUB - Russian Ruble).
+
+Exchange rates are taken from Oanda.com site, using <i>getFX()</i> function from the package <i>quantmod</i>
+Maximum period for plotting - 5 last years, till yesterday.
+
+By clicking the "Exchange Rates" menu item, you can choose one of the 2 tabs, with the names of the used libraries ("googleVis" and "dygraps"). 
+Each tab has its own filters, that are used to change the period of the plotting data, and control visualization properties.
+
+<b> 1. googleVis </b>
+<ul>
+	<li>"Show zoom buttons" - whether to show the zoom buttons ("1d 5d 1m" and so on)</li>
+	<li>"Show range selector" - whether to show the zoom range selection area (the area at the bottom of the chart)</li>
+	<li>"Alpha level of the fill" - a number from 0—100 (inclusive) specifying the alpha of the fill below each line in the line graph. 100 means 100% opaque, and 0 means no fill at all. The fill 		color is the same color as the line above it.</li>
+	<li>"Thickness of the lines" - a number from 0—10 (inclusive) specifying the thickness of the lines, where 0 is the thinnest.</li>
+</ul>
+<b> 2. dygraphs </b>
+<ul>
+	<li>"Step Plot" - plot series as step chart</li>
+	<li>"Fill Graph" - fill in the area underneath the series</li>
+	<li>"Draw Grid" - whether to display grid lines in the chart</li>
+	<li>"Log Scale" - set the graph to show the y-axis in log scale.</li>
+</ul>
+There are also 3 value boxes on the top of the both tabs, which display the change of the exchange rates (in %) from the start date till the end date, that are selected from the date range filter (by default, the last year data is filtered).
+
+Clicking on the button near the title in the upper left corner, you can hide or display sidebar.
+
+
