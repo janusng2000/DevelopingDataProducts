@@ -26,4 +26,6 @@ There are also 3 value boxes on the top of the both tabs, which display the chan
 
 Clicking on the button near the title in the upper left corner, you can hide or display sidebar.
 
+You can get the source of the application on <a href="https://github.com/labdmitriy/DevelopingDataProducts">github</a>.
+
 
